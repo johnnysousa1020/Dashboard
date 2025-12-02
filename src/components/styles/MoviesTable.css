@@ -1,0 +1,105 @@
+.movies-container{
+    padding: 20px;
+}
+
+.movies-container h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.back-btn-vooltar{
+    display: inline-block;
+    padding: 10px 16px;
+    background: #1f2937;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.back-btn-vooltar:hover{
+    background: #111827;
+}
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.movies-table{
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px; 
+    overflow: hidden; 
+    font-size: 15px;
+}
+
+.movies-table thead{
+    background: #f5f5f5;
+}
+
+.movies-table th{
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.movies-table td{
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+}
+
+.poster-img{
+    width: 60px;
+    border-radius: 5px;
+}
+
+.movies-table tr:hover{
+    background: #fafafa;
+    transition: 0.2s;
+}
+
+.btn-details{
+    padding: 6px 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-details:hover{
+    background: #005fcc;
+}
+
+@media (max-width: 600px){
+    .movies-container h1{
+        font-size: 22px;
+    }
+
+    .movies-table th, .movies-table td{
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .poster-img{
+        width: 45px;
+    }
+
+    .movies-table td:nth-child(2), .movies-table th:nth-child(2){
+        max-width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

@@ -1,0 +1,324 @@
+.dashboard-main{
+    margin-left: 23px;
+    margin-top: 30px;
+    padding: 24px;
+  /*  min-height: calc(100vh - 60px); */
+    background: #f6f7fb;
+    box-sizing: border-box;
+}
+
+.stats-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.stat-card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(12, 18, 27, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.stat-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.stat-title{
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.stat-icon{
+    font-size: 20px;
+}
+
+.stat-value{
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.stat-change{
+    margin-top: 8px;
+    font-size: 13px;
+    color: #374151;
+}
+
+.stat-change.positive{
+    color: #16a34a;
+}
+
+.stat-change.negative{
+    color: #ef4444;
+}
+
+.welcome-card{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 6px 18px rgba(12, 18, 27, 0.06);
+}
+
+.releases-chart{
+    padding: 12px 0;
+}
+
+.chart-list{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.chart-item{
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 90px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+}
+
+.chart-label{
+    font-size: 13px;
+    color: #333;
+}
+
+.chart-value{
+    font-weight: 700;
+    font-size: 18px;
+    color: #111;
+}
+
+.two-columns{
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.card{
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(12, 18, 27, 0.04);
+    margin-top: 18px;
+}
+
+.card.small{
+    padding: 12px;
+}
+
+.list-compact{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.list-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.list-item img{
+    width: 56px;
+    border-radius: 6px;
+}
+
+.list-ranked{
+    padding-left: 18px;
+    margin: 0;
+}
+
+.rank-title{
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.rank-score{
+    font-weight: 600;
+    color: #f59e0b;
+    margin-left: 8px;
+}
+
+.rank-score-main{
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #f59e0b;
+}
+
+.series-row{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.series-card{
+    width: 120px;
+    text-align: center;
+}
+
+.series-card img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.series-name{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.carousel-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-track{
+    display: flex;
+    gap: 14px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    overflow-y: hidden;
+}
+
+.carousel-track::-webkit-scrollbar{
+    height: 8px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 4px;
+}
+
+.carousel-card{
+    min-width: 150px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel-card img{
+    width: 150px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.carousel-btn{
+    position: absolute;
+    z-index: 10;
+    background: rgba(0,0,0,0.6);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.carousel-btn.left{
+    left: 5px;
+}
+
+.carousel-btn.right{
+    right: 5px;
+}
+
+.carousel-title{
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+@media (max-width: 1000px){
+    .stats-row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px){
+    .stats-row{
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .dashboard-main{
+        margin-left: 0;
+        margin-top: 0;
+        padding: 12px;
+    }
+
+    .list-compact{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .list-item{
+        padding: 10px;
+        border: 1px solid #eef2f6;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .list-item img{
+        width: 45px;
+    }
+
+    .series-card{
+        width: 48%;
+    }
+
+    .chart-list{
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .chart-item{
+        width: 48%;
+        min-width: auto;
+        padding: 12px 6px;
+    }
+
+    .rank-title, .series-name, .chart-label{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px){
+    .list-compact{
+        grid-template-columns: 1fr;
+    }
+
+    .series-card{
+        width: 30%;
+    }
+
+    .chart-item{
+        width: 100%;
+    }
+
+    .two-columns{
+        grid-template-columns: 1fr;
+    }
+}
