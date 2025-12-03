@@ -17,7 +17,7 @@ ao painel.
 - JavaScript
 - CSS
 
-  ---
+---
 
   ## Funcionalidades
 
@@ -29,7 +29,7 @@ ao painel.
   - 📱 Layout responsivo
   - 📁 Organização em componentes (filmes, séries e trailers)
  
-    ---
+ ---
 
     ## 🛠️ Como rodar o projeto localmente
 
@@ -37,7 +37,7 @@ ao painel.
     - npm run dev
     - npm run build
    
-    ---
+ ---
 
     ## 🔑 API usada - TMDB
 
