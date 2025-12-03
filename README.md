@@ -41,5 +41,5 @@ ao painel.
 
   ## 🔑 API usada - TMDB
 
-    Este projeto utiliza a **The Movie Database API** para buscar dados
-    de filmes e séries.
+  Este projeto utiliza a **The Movie Database API** para buscar dados
+  de filmes e séries.
