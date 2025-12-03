@@ -33,9 +33,9 @@ ao painel.
 
   ## 🛠️ Como rodar o projeto localmente
 
-    - npm install
-    - npm run dev
-    - npm run build
+  - npm install
+  - npm run dev
+  - npm run build
    
  ---
 
