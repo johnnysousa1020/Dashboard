@@ -31,7 +31,7 @@ ao painel.
  
  ---
 
-    ## 🛠️ Como rodar o projeto localmente
+  ## 🛠️ Como rodar o projeto localmente
 
     - npm install
     - npm run dev
@@ -39,7 +39,7 @@ ao painel.
    
  ---
 
-    ## 🔑 API usada - TMDB
+  ## 🔑 API usada - TMDB
 
     Este projeto utiliza a **The Movie Database API** para buscar dados
     de filmes e séries.
